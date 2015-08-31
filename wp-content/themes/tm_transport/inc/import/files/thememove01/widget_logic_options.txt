@@ -1,0 +1,11 @@
+[START=WIDGET LOGIC OPTIONS]
+search-2	"is_page(\\'classic-blog\\')||is_single()"
+text-5	"is_page(\\'classic-blog\\')||is_single()"
+meta-2	"is_page(\\'classic-blog\\')||is_single()"
+better-menu-widget-3	"is_tree(17)"
+text-6	"is_page(\\'contact\\')||is_tree(17)"
+woocommerce_product_search-2	""
+woocommerce_products-2	""
+woocommerce_product_categories-2	""
+text-4	""
+[STOP=WIDGET LOGIC OPTIONS]

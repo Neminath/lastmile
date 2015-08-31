@@ -1,0 +1,110 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Mini Cart
+----------------------------------------------*/
+.mini-cart {
+  padding: 0 15px;
+  position: relative;
+  .mini-cart__button {
+    cursor: pointer;
+    .transit;
+    .mini-cart-icon {
+      position: relative;
+      &:before {
+        .iconfont;
+        content: '\f07a';
+        font-size: 20px;
+        float: none;
+        width: auto;
+        height: auto;
+        line-height: normal;
+        border: none;
+        margin: 0;
+      }
+      &:after {
+        font-family: inherit;
+        content: attr(data-count);
+        font-size: 12px;
+        font-weight: 600;
+        text-align: center;
+        position: absolute;
+        top: -16px;
+        right: -12px;
+        min-width: 20px;
+        line-height: 20px;
+        .rounded(100%);
+      }
+    }
+  }
+  .widget_shopping_cart_content {
+    position: absolute;
+    right: 0;
+    top: 140%;
+    width: 300px;
+    max-height: 700px;
+    overflow: auto;
+    opacity: 0;
+    visibility: hidden;
+    padding-top: 15px;
+    z-index: 99999;
+    background-color: #fff;
+    .box_shadow(0, 6px, 12px, 0, rgba(0,0,0,0.2));
+    .transition;
+    .cart_list {
+      li {
+        padding: 0 15px 10px;
+        margin-bottom: 10px;
+        border-bottom: 1px solid #EEEEEE;
+        .clear;
+        img{
+          width: 70px;
+          margin: 0 10px 0 0;
+          float: left;
+        }
+        .quantity{
+          display: block;
+          color: #666;
+          font-size: 12px;
+        }
+        .remove {
+          font-size: 20px;
+          height: 20px;
+          width: 20px;
+          text-align: center;
+          line-height: 15px;
+          float: right;
+          position: relative;
+          display: inline-block;
+          .rounded(100%);
+          &:hover{
+            color: #fff!important;
+            background: red;
+          }
+        }
+      }
+    }
+    .total {
+      padding: 5px 15px 5px;
+      margin-bottom: 0;
+      text-align: center;
+    }
+    .buttons{
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .wc-forward{
+      display: inline-block;
+      padding: 5px 10px;
+      margin: 10px 3px 15px;
+      text-transform: uppercase;
+    }
+  }
+  &.open {
+    .widget_shopping_cart_content {
+      opacity: 1;
+      visibility: visible;
+      top: 100%;
+    }
+  }
+}

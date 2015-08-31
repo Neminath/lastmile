@@ -1,0 +1,36 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Header 03
+--------------------------------------------------------------*/
+.header{
+  padding: 20px 0;
+  width: 100%;
+  .transit;
+}
+.header03{
+  #site-navigation .menu > ul > li, #site-navigation .menu > li{
+    &:before{
+      content: '\\\\';
+      position: absolute;
+      right: 0;
+      font-family: "Times New Roman", "Bitstream Charter", Times, serif;
+    }
+    &.current-menu-item,&:hover{
+      >a{
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+}
+
+@media @lg {
+  .header{
+    &.headroom--not-top{
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      padding: 0;
+    }
+  }
+}

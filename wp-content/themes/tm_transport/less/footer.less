@@ -1,0 +1,132 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Footer
+----------------------------------------------*/
+.site-footer{
+  .widget-title{
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .05em;
+    &:before{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 1px;
+      border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    span{
+      position: relative;
+      display: inline-block;
+      padding: 10px 10px 10px 20px;
+      &:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 0 0 50px;
+        border-color: transparent transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        right: -50px;
+      }
+    }
+  }
+  .col-md-4{
+    margin-bottom: 30px;
+  }
+  .widget{
+    img{
+      margin: -15px 0 20px;
+    }
+  }
+  .social-menu .menu{
+    li{
+      margin: 0 15px 0 0;
+      a:before{
+        font-size: 20px;
+      }
+    }
+  }
+  .menu{
+    font-size: 0;
+    li{
+      vertical-align: top;
+      margin-bottom: 10px;
+      list-style-type: none;
+      font-size: 14px;
+      display: block;
+      .transit;
+      &:hover{
+        .translate(10px,0)
+      }
+      a:before{
+        content: "\f101";
+        margin-right: 10px;
+        .iconfont;
+      }
+    }
+  }
+}
+.office{
+  p{
+    margin-bottom: 10px;
+  }
+  i{
+    font-size: 16px;
+    width: 35px;
+  }
+}
+.copyright{
+  overflow: hidden;
+  line-height: 1;
+  .left{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  .right{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+@media @md {
+  .site-footer{
+    .menu {
+      li {
+        display: inline-block;
+        width: 50%;
+      }
+    }
+  }
+  .copyright{
+    .left{
+      &:before{
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: -1000px;
+        width: 1000px;
+      }
+      &:after{
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 200px 0 0 90px;
+        border-color: transparent transparent transparent transparent;
+        position: absolute;
+        top: 0;
+        right: -90px;
+      }
+    }
+  }
+}

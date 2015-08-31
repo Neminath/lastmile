@@ -1,0 +1,48 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Page
+--------------------------------------------------------------*/
+.big-title,.big-title--single{
+  position: relative;
+  margin-bottom: 70px;
+  .container{
+    position: relative;
+    z-index: 1;
+  }
+  &:after{
+    content: '';
+    .absolute-center;
+  }
+}
+.taxonomy-description{
+  margin-top: -50px;
+  padding-bottom: 50px;
+  display: block;
+  font-size: 20px;
+}
+.pagination{
+  margin-bottom: 70px;
+  span,a{
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #dddddd;
+    margin-right: 10px;
+  }
+  span.current{
+    color: #FFFFFF;
+  }
+  .next,.prev{
+    width: auto;
+    border: none;
+  }
+}
+
+@media @lg {
+  .big-title,.big-title--single {
+    margin: 0 -100% 70px;
+  }
+}

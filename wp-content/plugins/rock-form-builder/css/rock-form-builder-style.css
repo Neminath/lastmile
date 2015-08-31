@@ -1,0 +1,277 @@
+/* CSS Document */
+.rockthemes-form-builder textarea{min-height:118px;}
+
+.rockthemes-form-builder select{padding:5px;}
+
+.rockthemes_fb_element_container{margin-bottom:10px;}
+
+.rockthemes-form-builder > .row{margin-bottom:15px;}
+
+.rockthemes_fb_element_container > p{margin:0px;}
+
+.rockthemes-fb-element > p{margin:0px;}
+
+.rockthemes_fb_element_container input[type="password"]{width:100%; height:33px; margin-bottom:0px;}
+
+.rockthemes_fb_element_container  .radio-button-horizontal{float:left; margin:0px 15px 0px 0px;}
+
+.rockthemes_fb_element_container > div[element-type="radio_button"] > p{margin-bottom:10px;}
+
+.rockthemes-fb-field-header-title{
+	font-family:inherit; font-size:14px; font-weight:600; margin:0px 0px 15px 0px;
+	position:relative; display:block; width:100%;
+}
+
+.rockthemes_fb_element_container label{
+	font-family:inherit;
+	font-size:12px;
+	font-weight:normal;
+}
+
+.rockthemes-fb-required, .rockthemes-fb-email{
+	border:1px solid #F00;	
+}
+
+.rockthemes-fb-error-details{
+	background:rgba(245, 93, 93, 0.86);
+	border:1px solid #F34545;
+	color:#FFF;	
+	margin:0 0 1em 0;
+	padding:15px 30px 15px 15px;
+	font-weight:normal;
+	border-radius:3px;
+	display:none;
+	position:relative;
+}
+
+.rockthemes-fb-error-details{
+	font-size:11px;
+}
+
+.rockthemes-fb-error-details .error-title{
+	font-weight:bold;
+	display:inline;
+}
+
+.rockthemes-fb-error-details .close{
+	font-size: 26px;
+	font-weight: bold;
+	padding: 5px 1px 4px;
+	line-height: 0;
+	position: absolute;
+	top: 0.4375em;
+	right: 0.3125em;
+	color: #333;
+	opacity: 0.3;
+}
+
+.rockthemes-fb-error-details .close:hover{
+	opacity:0.5;
+	cursor:pointer;	
+}
+
+.rockthemes-fb-send{
+	cursor:pointer;	
+	display:inline;
+	margin:0 5px 5px 0;
+}
+
+.rockthemes-active .rockthemes-fb-send{
+	display:inline-block;	
+}
+
+.sending-result{
+	font-family:inherit;
+	font-size:13px;
+	font-weight:inherit;
+	color:#999;
+}
+
+.sending-result i.fa-times{color:#F00;}
+.sending-result i.fa-check{color:#090;}
+
+.no-margin{margin:0px;}
+.no-padding{padding:0px;}
+
+#drop-target{
+	border: 10px dashed #999;
+	text-align: center;
+	color: #999;
+	font-size: 20px;
+	width: 600px;
+	height: 300px;
+	line-height: 300px;
+	cursor: pointer;
+}
+/*Google reCAPTCHA*/
+#recaptcha_response_field{
+	height:auto !important;	
+}
+
+#recaptcha_image{
+	width:100%;
+	height:auto !important;	
+}
+
+@media (max-width: 480px) {
+	
+	.recaptchatable #recaptcha_image {
+		margin: 0 !important;
+		width: 100% !important;
+	}
+	.recaptchatable .recaptcha_r4_c4, .recaptchatable .recaptcha_r1_c1, .recaptchatable .recaptcha_r3_c1, .recaptchatable .recaptcha_r3_c2, .recaptchatable .recaptcha_r7_c1, .recaptchatable .recaptcha_r8_c1, .recaptchatable .recaptcha_r4_c1, .recaptchatable .recaptcha_r3_c3, .recaptchatable .recaptcha_r4_c2, .recaptchatable .recaptcha_r2_c1, .recaptchatable .recaptcha_r4_c1, .recaptchatable .recaptcha_r4_c2, .recaptchatable .recaptcha_r4_c4, .recaptchatable .recaptcha_image_cell {
+		background: none !important;
+	}
+	
+	#recaptcha_widget_div table, #recaptcha_widget_div tbody{
+		width:100%;
+		display:block;	
+	}
+	
+	#recaptcha_widget_div td{
+		width:100%;
+		display:block;
+		padding-right:7px;
+	}
+	
+	#recaptcha_widget_div tr{
+		width:100%;
+		display:block;
+	}
+	
+	#recaptcha_widget_div #recaptcha_response_field{
+		width:100% !important;	
+	}
+	
+	
+	#recaptcha_widget_div tr:first-child td:nth-child(2), 
+	#recaptcha_widget_div tr:first-child td:nth-child(3){
+		width:40%;
+		display:block;
+		float:left;
+	}
+	
+	#recaptcha_widget_div tr:after{
+		content: ".";
+		clear:both;
+		display:block;
+		position:relative;
+		width:100%;
+		height:auto;
+		visibility:hidden;
+	}
+}
+
+
+/*Custom checkbox*/
+.checkbox-supported .radio-btn input[type="radio"], .checkbox-supported .check-box input[type="checkbox"] {
+    visibility: hidden;
+}
+
+.checkbox-supported .check-box {
+    width: 22px;
+    height: 22px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 2px 7px 0 0;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 1px #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+    border: 1px solid #ccc;
+}
+.checkbox-supported .check-box i {
+    background: #898A8C;
+    position: absolute;
+    left: 3px;
+    bottom: -18px;
+    width: 14px;
+    height: 14px;
+    opacity: .5;
+    -webkit-transition: all 400ms ease-in-out;
+    -moz-transition: all 400ms ease-in-out;
+    -o-transition: all 400ms ease-in-out;
+    transition: all 400ms ease-in-out;
+    -webkit-transform:rotateZ(-180deg);
+    -moz-transform:rotateZ(-180deg);
+    -o-transform:rotateZ(-180deg);
+    transform:rotateZ(-180deg);
+}
+.checkbox-supported .checkedBox {
+    -moz-box-shadow: inset 0 0 5px 1px #ccc;
+    -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+    box-shadow: inset 0 0 5px 1px #ccc;
+    border-bottom-color: #fff;
+}
+.checkbox-supported .checkedBox i {
+	opacity:1;
+    bottom: 3px;
+    -webkit-transform:rotateZ(0deg);
+    -moz-transform:rotateZ(0deg);
+    -o-transform:rotateZ(0deg);
+    transform:rotateZ(0deg);
+}
+/*Custom radio button*/
+.checkbox-supported .radio-btn {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 3px 7px 0 0;
+    cursor: pointer;
+    position: relative;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 1px #ccc;
+    background: rgb(255, 255, 255);
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(47%, rgba(246, 246, 246, 1)), color-stop(100%, rgba(237, 237, 237, 1)));
+    background: -webkit-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -o-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: -ms-linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(246, 246, 246, 1) 47%, rgba(237, 237, 237, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#ededed', GradientType=0);
+}
+.checkbox-supported .checkedRadio {
+    -moz-box-shadow: inset 0 0 5px 1px #ccc;
+    -webkit-box-shadow: inset 0 0 5px 1px #ccc;
+    box-shadow: inset 0 0 5px 1px #ccc;
+}
+.checkbox-supported .radio-btn i {
+    border: 1px solid #E1E2E4;
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+}
+.checkbox-supported .checkedRadio i {
+    background-color: #898A8C;
+}
+
+.plupload.html5{display:none;}
+
+.ie .plupload{display:none;}
+
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi) { 
+	.checkbox-supported .check-box i {
+		background: url('../images/checkmark_32.png') no-repeat center center;
+		background-size:16px 16px;
+	}
+}

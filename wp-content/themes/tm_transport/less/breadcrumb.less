@@ -1,0 +1,38 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Breadcrumb
+----------------------------------------------*/
+.breadcrumb{
+  overflow: hidden;
+}
+.tm_bread_crumb{
+  margin: 0 -15px;
+  padding: 15px 20px;
+  display: inline-block;
+  position: relative;
+  &:before{
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 60px 0 0 40px;
+    border-color: transparent transparent transparent transparent;
+    position: absolute;
+    top: 0;
+    right: -40px;
+    .transit;
+  }
+  li{
+    display: inline-block;
+    margin-right: 6px;
+    a:after{
+      content: "\f061";
+      .iconfont;
+      margin-left: 10px;
+    }
+    &:last-child{
+      margin: 0;
+    }
+  }
+}

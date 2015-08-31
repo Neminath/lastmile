@@ -1,0 +1,142 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------
+Navigation
+----------------------------------------------*/
+.menu-item,.page_item{
+  display: inline-block;
+}
+
+// top menu
+.top-menu{
+  position: relative;
+  z-index: 1;
+  .menu-item{
+    padding: 5px;
+    a:after{
+      .iconfont;
+      content: "\f178";
+      margin-left: 10px;
+    }
+  }
+}
+
+//social menu
+.social-menu{
+  .menu{
+    li{
+      display: inline-block;
+      margin-left: 20px;
+      width: auto !important;
+      &:hover{
+        .translate(0,0) !important;
+      }
+      &:before{
+        display: none;
+      }
+      a{
+        font-size: 0;
+        &:before{
+          .iconfont;
+          font-size: 16px;
+          display: inline-block;
+        }
+        &[href*="facebook"]:before{
+          content: "\f09a";
+        }
+        &[href*="twitter"]:before{
+          content: "\f099";
+        }
+        &[href*="instagram"]:before{
+          content: "\f16d";
+        }
+        &[href*="youtube"]:before{
+          content: "\f16a";
+        }
+        &[href*="plus.google.com"]:before{
+          content: "\f0d5";
+        }
+        &[href*="flickr"]:before{
+          content: "\f16e";
+        }
+        &[href*="dribbble"]:before{
+          content: "\f17d";
+        }
+        &[href*="foursquare"]:before{
+          content: "\f180";
+        }
+        &[href*="linkedin"]:before{
+          content: "\f0e1";
+        }
+        &[href*="tumblr"]:before{
+          content: "\f173";
+        }
+        &[href*="feed"]:before{
+          content: "\f09e";
+        }
+      }
+    }
+  }
+}
+
+//primary menu
+#site-navigation {
+  position: relative;
+  z-index: 999;
+  width: 100%;
+  .menu li{
+    &:hover{
+      >.sub-menu,>.children{
+        visibility: visible;
+        opacity: 1;
+        z-index: 999;
+        >li{
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  .menu >ul >li,.menu >li {
+    padding: 25px 20px;
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    line-height: 1;
+    .transit;
+    a {
+      position: relative;
+      z-index: 1;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+  }
+  .sub-menu,.children{
+    position: absolute;
+    width: 1000px;
+    left: 0;
+    top: 100%;
+    z-index: 2;
+    opacity: 0;
+    visibility: hidden;
+    .transit;
+    li{
+      position: relative;
+      margin-right: 20px;
+      .transit;
+      &:after {
+        content: '';
+        .absolute-center;
+        .skew(20deg,0);
+        .transit;
+      }
+    }
+  }
+}
+
+@media @md {
+  .top-menu {
+    .menu-item {
+      padding: 15px 30px 15px 0;
+    }
+  }
+}

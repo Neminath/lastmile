@@ -1,0 +1,135 @@
+@import (reference) "_elements";
+
+/*--------------------------------------------------------------
+Header
+--------------------------------------------------------------*/
+.site-top{
+  width: 100%;
+  position: relative;
+}
+.site-branding{
+  position: relative;
+  z-index: 1;
+  padding: 20px 15px;
+}
+
+.extra-info{
+  >div{
+    padding: 10px 15px;
+    text-align: left;
+  }
+  i{
+    display: inline-block;
+    font-size: 30px;
+    margin-bottom: 20px;
+    float: left;
+    margin-right: 15px;
+  }
+  span{
+    font-weight: 600;
+    color: #777;
+  }
+  h3{
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: normal;
+    font-weight: normal;
+  }
+}
+
+.search-box {
+  position: relative;
+  z-index: 9999;
+  i {
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    overflow: hidden;
+    height: 20px;
+    width: 20px;
+    .transit;
+    .transition-duration(0.1s);
+    &:before, &:after {
+      position: absolute;
+      .transit;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+    }
+    &:after {
+      content: '\f00d';
+      top: 100%;
+      left: 0;
+    }
+  }
+  label span,input[type="submit"]{
+    display: none;
+  }
+  input[type="search"] {
+    position: absolute;
+    width: 100%;
+    z-index: 99;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 3px solid transparent;
+    .box_shadow(0, 6px, 12px, 0, rgba(0,0,0,0.2));
+    .transit;
+  }
+  .search-form {
+    position: absolute;
+    right: 330px;
+    width: 300px;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    .transit;
+    &:before {
+      content: '';
+      .absolute-center;
+    }
+    &.open {
+      opacity: 1;
+      visibility: visible;
+      + i {
+        &:before {
+          top: -100%;
+        }
+        &:after {
+          top: 0;
+        }
+      }
+    }
+  }
+  @media @md-max {
+    width: 100%;
+  }
+}
+///////////////sm//////////////////
+@media @sm {
+  body{
+    color: #000;
+  }
+}
+
+///////////////md//////////////////
+@media @md {
+  .site-top{
+    .social-menu{
+      display: inline-block;
+      position: relative;
+      ul{
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+}
+
+///////////////lg//////////////////
+@media @lg {
+
+}
